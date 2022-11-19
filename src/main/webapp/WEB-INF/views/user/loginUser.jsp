@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Admin Registration</title>
+<title>User Login</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <style>
 	
@@ -25,32 +25,19 @@
 	
 	<br>
 	
-	<a href="showLoginPage"><input type="button" value="Login"></a>
+	<a href="showUserRegPage"><input type="button" value="Sign Up"></a>
 	
 	<br>
 	
 	<img src="https://png.pngtree.com/png-clipart/20220823/original/pngtree-man-sitting-table-with-laptop-png-image_8448440.png" alt="background-image">
 	
-	<br>
-	<h3>Register here.....</h3><br>
+	<br><br>
+	${msg}
+	<br><br>
+	<h3>Login here.....</h3><br>
 	
-	<form action="saveAdmin" method="post">
+	<form action="verifyUserLogin" method="post">
 		<table>
-			<tr>
-				<td>Enter First Name</td>
-				<td><input type="text" name="firstName"></td>
-			</tr>
-			
-			<tr>
-				<td>Enter Last Name</td>
-				<td><input type="text" name="lastName"></td>
-			</tr>
-			
-			<tr>
-				<td>Enter Mob no.</td>
-				<td><input type="text" name="mobile"></td>
-			</tr>
-			
 			<tr>
 				<td>Enter Email Id</td>
 				<td><input type="email" name="email"></td>
@@ -63,7 +50,7 @@
 			
 			<tr>
 				<td></td>
-				<td><input type="submit" value="Register"></td>
+				<td><input type="submit" value="Sign in"></td> <td><input type="reset" value="Clear"></td>
 			</tr>
 		</table>
 	</form>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Admin Registration</title>
+<title>User Registration</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <style>
 	
@@ -25,16 +25,17 @@
 	
 	<br>
 	
-	<a href="showLoginPage"><input type="button" value="Login"></a>
+	<a href="showUserLoginPage"><input type="button" value="Sign in"></a>
 	
 	<br>
 	
 	<img src="https://png.pngtree.com/png-clipart/20220823/original/pngtree-man-sitting-table-with-laptop-png-image_8448440.png" alt="background-image">
 	
-	<br>
+	<br><br>
+	
 	<h3>Register here.....</h3><br>
 	
-	<form action="saveAdmin" method="post">
+	<form action="saveUser" method="post">
 		<table>
 			<tr>
 				<td>Enter First Name</td>
@@ -48,7 +49,7 @@
 			
 			<tr>
 				<td>Enter Mob no.</td>
-				<td><input type="text" name="mobile"></td>
+				<td><input type="text" name="mobile" placeholder="Enter your Registered Mob no."></td>
 			</tr>
 			
 			<tr>

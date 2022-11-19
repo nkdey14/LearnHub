@@ -44,4 +44,19 @@ public class StudentServiceImpl implements StudentService {
 		
 		studentRepo.deleteById(id);
 	}
+
+	@Override
+	public void deleteStudentByEmail(String email) {
+		
+		studentRepo.deleteByEmail(email);
+		
+	}
+
+	@Override
+	public Student findStudentByMobile(long mobile) {
+
+		Student student = studentRepo.findByMobile(mobile);
+		
+		return student;
+	}
 }

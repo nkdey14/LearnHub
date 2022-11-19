@@ -59,7 +59,7 @@
 			
 			<tr>
 				<td></td>
-				<td><input type="submit" value="Save"></td>
+				<td><input type="submit" value="Save"></td>  <td><a href="listAllStudents"><input type="button" value="Back"></a></td>
 			</tr>
 		</table>
 	</form>

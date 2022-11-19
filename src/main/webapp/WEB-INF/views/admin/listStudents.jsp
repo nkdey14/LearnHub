@@ -28,13 +28,15 @@
 			<th>Course</th>
 			<th>Edit</th>
 			<th>Delete</th>
+			<th>Send Email</th>
+			<th>Enroll</th>
 		</tr>
 		
 		<c:forEach var="student" items="${students}">
 		
 		<tr>		
 			<td>${student.id}</td>
-			<td>${student.firstName}</td>
+			<td><a href="studentInfoData?id=${student.id}">${student.firstName}</a></td>
 			<td>${student.lastName}</td>
 			<td>${student.gender}</td>
 			<td>${student.email}</td>
@@ -43,6 +45,8 @@
 			<td>${student.course}</td>
 			<td><a href="updateStudent?id=${student.id}"><input type="button" value="Edit"></a></td>
 			<td><a href="deleteStudent?id=${student.id}"><input type="button" value="Delete"></a></td>
+			<td><a href="sendEmail?email=${student.email}"><input type="button" value="Send Email"></a></td>
+			<td><a href="enrollCourse?id=${student.id}"><input type="button" value="Enroll"></a></td>
 		</tr>
 		
 		</c:forEach>

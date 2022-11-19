@@ -26,7 +26,6 @@
 	<br>
 	
 	<a href="showRegPage"><input type="button" value="Register here"></a>
-	<a href="showLoginPage"><input type="button" value="Login"></a>
 	
 	<br>
 	
@@ -51,7 +50,7 @@
 			
 			<tr>
 				<td></td>
-				<td><input type="submit" value="Login"></td>
+				<td><input type="submit" value="Login"></td> <td><input type="reset" name="Clear"></td>
 			</tr>
 		</table>
 	</form>

@@ -14,4 +14,8 @@ public interface StudentService {
 
 	public void deleteStudentDetails(int id);
 
+	public void deleteStudentByEmail(String email);
+
+	public Student findStudentByMobile(long mobile);
+
 }
