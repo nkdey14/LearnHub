@@ -56,13 +56,13 @@ public class UserController {
 			
 			if(user.getEmail().equals(email) && user.getPassword().equals(password)) {
 				
-				Learner learner = learnerService.findLeanerByMob(user.getMobile());
-				
-				model.addAttribute("learner", learner);
+//				Learner learner = learnerService.findLeanerByMob(user.getMobile());
+//				
+//				model.addAttribute("learner", learner);
 				
 				model.addAttribute("msg", "Login successful!");
 				
-				return "user/learnerInfo";
+				return "user/getCourseInfo";
 				
 			}else {
 				
@@ -76,6 +76,25 @@ public class UserController {
 			model.addAttribute("msg", "Invalid username or password!");
 			
 			return "user/loginUser";
+		}
+	}
+	
+	@RequestMapping("/showCourseDetails")
+	public String viewCourseDetails(@RequestParam("mobile") long mobile, Model model) {
+		
+		Learner learner = learnerService.findLeanerByMob(mobile);
+		
+		if(learner != null) {
+			
+			model.addAttribute("learner", learner);
+			
+			return "user/learnerInfo";
+			
+		}else {
+			
+			model.addAttribute("msg", "Sorry, No Record found!");
+			
+			return "user/getCourseInfo";
 		}
 	}
 }

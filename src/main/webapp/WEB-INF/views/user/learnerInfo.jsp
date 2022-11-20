@@ -53,7 +53,7 @@ ${msg}
 		</tr>
 	</table>
 	<br>
-	<a href="proceedPayment?mobile=${learner.mobile}"><input type="button" value="Proceed Payment"></a>
+	<a href="proceedPayment?mobile=${learner.mobile}&fees=${learner.fees}"><input type="button" value="Proceed Payment"></a>
 </div>
 </body>
 </html>
