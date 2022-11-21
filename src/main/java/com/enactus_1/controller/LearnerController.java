@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.enactus_1.entities.Learner;
+import com.enactus_1.entities.Payment;
 import com.enactus_1.entities.Student;
 import com.enactus_1.services.LearnerService;
+import com.enactus_1.services.PaymentService;
 import com.enactus_1.services.StudentService;
 
 @Controller
@@ -23,6 +25,9 @@ public class LearnerController {
 	
 	@Autowired
 	private StudentService studentService;
+	
+	@Autowired
+	private PaymentService paymentService;
 	
 	@PostMapping("/verifyCourseDetails")
 	public String confirmCourseDetails(@ModelAttribute("learner") Learner l, Model model) {

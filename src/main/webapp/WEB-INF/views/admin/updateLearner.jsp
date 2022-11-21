@@ -29,8 +29,7 @@
 			
 			<tr>
 				<td>Gender</td>
-				<td>Male <input type="radio" name="gender" value="Male"> 
-        		Female <input type="radio" name="gender" value="Female"> </td>   
+				<td><input type="text" name="gender" value="${learner.gender}"></td>   
 			</tr>
 			
 			<tr>

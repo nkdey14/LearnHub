@@ -29,7 +29,8 @@
 			<th>Fees</th>
 			<th>Edit</th>
 			<th>Delete</th>
-			<th>Send Email</th>
+			<th>Email</th>
+			<th>Check Status</th>
 		</tr>
 		
 		<c:forEach var="learner" items="${learners}">
@@ -47,7 +48,8 @@
 			<td>${learner.fees}</td>
 			<td><a href="updateLearner?id=${learner.id}"><input type="button" value="Edit"></a></td>
 			<td><a href="deleteLearner?id=${learner.id}"><input type="button" value="Delete"></a></td>
-			<td><a href="sendEmail?email=${learner.email}"><input type="button" value="Send Email"></a></td>
+			<td><a href="sendEmail?email=${learner.email}"><input type="button" value="Email"></a></td>
+			<td><a href="checkPayment?mobile=${learner.mobile}"><input type="button" value="Check Status"></a></td>
 		</tr>
 		
 		</c:forEach>
