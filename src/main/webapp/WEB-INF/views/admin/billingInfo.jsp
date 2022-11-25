@@ -53,7 +53,7 @@ ${msg}
 		</tr>
 	</table>
 	<br>
-	<a href="listAllLearners"><input type="button" value="Back"></a>
+	<a href="listAllBills"><input type="button" value="Back"></a>
 </div>
 </body>
 </html>

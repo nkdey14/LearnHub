@@ -6,4 +6,6 @@ import com.enactus_1.entities.Billing;
 
 public interface BillingRepository extends JpaRepository<Billing, Integer> {
 
+	public Billing findByMobile(String mobile);
+
 }

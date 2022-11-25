@@ -127,4 +127,10 @@ public class LearnerController {
 			return "admin/findLearner";
 		}
 	}
+	
+	@GetMapping("/showCourseInfo")
+	public String showLearner() {
+		
+		return "user/getCourseInfo";
+	}
 }

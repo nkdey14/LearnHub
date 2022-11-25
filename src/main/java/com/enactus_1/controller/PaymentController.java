@@ -36,4 +36,25 @@ public class PaymentController {
 			return "admin/showPaymentStatus";
 		}
 	}
+	
+	@GetMapping("/checkPaymentStatus")
+	public String viewPaymentData(@RequestParam("mobile") long mobile, Model model) {
+		
+		Payment payment = paymentService.findPaymentByMob(mobile);
+		
+		if(payment != null) {
+				
+				model.addAttribute("mobile", mobile);
+			
+				model.addAttribute("msg", "Paid");
+				
+				return "user/showPaymentStatus";
+				
+		}else {
+			
+			model.addAttribute("msg", "Pending");
+			
+			return "user/showPaymentStatus";
+		}
+	}
 }

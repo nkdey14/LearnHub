@@ -5,56 +5,55 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Learner Details</title>
+<title>Billing Details</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
 <div align="center">
 ${msg}
 <br><br>
-	<h3>Learner Details</h3><br>
+	<h3>Billing Details</h3><br>
 	
 	<table border='1' cellspacing='1' cellpadding='8'>
 		<tr>
 			<th>First Name</th>
-			<td>${learner.firstName}</td>
+			<td>${bill.firstName}</td>
 		</tr>
 		<tr>
 			<th>Last Name</th>
-			<td>${learner.lastName}</td>
-		</tr>
-		<tr>
-			<th>Gender</th>
-			<td>${learner.gender}</td>
+			<td>${bill.lastName}</td>
 		</tr>
 		<tr>
 			<th>Email Id</th>
-			<td>${learner.email}</td>
+			<td>${bill.email}</td>
 		</tr>
 		<tr>
 			<th>Mob no.</th>
-			<td>${learner.mobile}</td>
+			<td>${bill.mobile}</td>
 		</tr>
 		<tr>
 			<th>City</th>
-			<td>${learner.city}</td>
+			<td>${bill.city}</td>
 		</tr>
 		<tr>
 			<th>Course</th>
-			<td>${learner.course}</td>
+			<td>${bill.course}</td>
 		</tr>
 		<tr>
 			<th>Duration</th>
-			<td>${learner.duration}</td>
+			<td>${bill.duration}</td>
 		</tr>
 		<tr>
 			<th>Fees</th>
-			<td>${learner.fees}</td>
+			<td>${bill.fees}</td>
+		</tr>
+		<tr>
+			<th>Mode of Payment</th>
+			<td>${bill.paymentMode}</td>
 		</tr>
 	</table>
 	<br>
-	<a href="checkPaymentStatus?mobile=${learner.mobile}"><input type="button" value="Payment Status"></a>
-	<a href="proceedPayment?mobile=${learner.mobile}&fees=${learner.fees}"><input type="button" value="Proceed Payment"></a>
+	<a href="showBillingInfo"><input type="button" value="Back"></a>
 </div>
 </body>
 </html>
