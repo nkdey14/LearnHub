@@ -54,6 +54,8 @@ public class BillingRestController {
 	
 	// http://localhost:8083/Enactus/api/bills/bill/7
 	
+	// Exposing web services
+	
 	@GetMapping("/bill/{id}")
 	public Billing getBillingInfo(@PathVariable("id") int id) {
 		
