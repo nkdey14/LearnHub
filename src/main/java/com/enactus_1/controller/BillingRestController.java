@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.enactus_1.entities.Billing;
 import com.enactus_1.repositories.BillingRepository;
 
+// Web Services Layer
+
 @RestController
 @RequestMapping("/api/bills")
 public class BillingRestController {
